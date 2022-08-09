@@ -76,6 +76,7 @@ struct ContentView: View {
                 Spacer()
                 
                
+                
                     Text(Gradeds)
                         .font(.custom("Amiri-Italic", size: 100 ))
                         .foregroundColor(.white)
