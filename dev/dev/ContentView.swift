@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var Tracks = Image(systemName: "questionmark")
+    @State var Tracks = Image("K-C")
     
     var body: some View {
         ZStack{
@@ -30,8 +30,11 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .shadow(color: .green, radius: 4)
                         .padding()
+                        .onLongPressGesture{
+                            Tracks = Image("K-C")
+                        }
                     Spacer()
-                    
+                        
                     Text("next")
                         .foregroundColor(.white)
                         .font(.title)
